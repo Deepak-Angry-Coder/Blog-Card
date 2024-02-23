@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-size: 16px;
+}
+
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+body {
+  background-color: var(--Yellow);
+}
+
+@font-face {
+  font-family: "Figtree-semibold";
+  src: url("../fonts/static/Figtree-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Figtree-ExtraBold";
+  src: url("../fonts/static/Figtree-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Figtree-italic";
+  src: url("../fonts/Figtree-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Figtree-variables";
+  src: url("../fonts/Figtree-VariableFont_wght.ttf");
+}
+
+.wrapper {
+  /* width: 100%; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_card {
+  width: 26%;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.3rem;
+  border-radius: 15px;
+  border: 1px solid black;
+  box-shadow: 7px 7px 0px 0px var(--Black);
+}
+
+.main_card .img_sec img {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1.3rem;
+}
+
+.main_card .content_sec a {
+  text-decoration: none;
+  background-color: var(--Yellow);
+  padding: 0.5rem 0.9rem 0.5rem 0.9rem;
+  font-family: "Figtree-ExtraBold";
+  color: var(--Black);
+  border-radius: 5px;
+}
+
+.main_card .content_sec p:nth-child(2) {
+  margin: 1.2rem 0rem 1rem 0rem;
+  font-size: 14px;
+  font-family: "Figtree-semibold";
+}
+
+.main_card .content_sec h2 {
+  font-size: 1.45rem;
+  margin-bottom: 1rem;
+  font-family: "Figtree-ExtraBold";
+}
+
+.main_card .content_sec p:nth-child(4) {
+  color: var(--Grey);
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.main_card .content_sec span {
+  display: flex;
+  align-items: center;
+}
+
+.main_card .content_sec span > img {
+  width: 30px;
+  margin-right: 0.7rem;
+}
+
+.main_card .content_sec span > p:nth-child(2) {
+  font-family: "Figtree-ExtraBold";
+  font-weight: 800;
+}
+
+@media (max-width: 1024px) {
+  .main_card {
+    width: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main_card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 425px) {
+  .main_card {
+    width: 90%;
+  }
+  .main_card .content_sec h2 {
+    font-size: 1.3rem;
+  }
+
+  .main_card .content_sec p:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .main_card .content_sec p:nth-child(4) {
+    color: var(--Grey);
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+}
